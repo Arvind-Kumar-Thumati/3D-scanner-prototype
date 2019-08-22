@@ -1,0 +1,8 @@
+NoDelayTimer	KEYWORD1
+getElapsedTime KEYWORD2
+setDelay KEYWORD2
+isTimeUp KEYWORD2
+resetTimer KEYWORD2
+getPhase KEYWORD2
+setPhase KEYWORD2
+incrementPhase KEYWORD2

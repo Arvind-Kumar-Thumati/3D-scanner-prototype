@@ -1,0 +1,19 @@
+Use something like:
+NoDelayTimer timer(1000);
+or
+NoDelayTimer timer(1000,0,10);//Sets a start and end phase which must be positive
+
+
+*unsigned long getElapsedTime();
+void setDesiredDelay(unsigned long l); //Used if you wish to change the delay after creation (then it resets)
+
+*boolean isTimeUp();
+
+ALWAYS manually reset or it won't work
+
+void resetTimer(); //resets the timer
+
+Optionally used program phases:
+int getPhase();
+void setPhase(int newPhase);//No bounds check
+void incrementPhase();//Increments and resets the phase between start and end only if you have set them
